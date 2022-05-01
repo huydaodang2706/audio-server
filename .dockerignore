@@ -1,0 +1,6 @@
+test/**
+logs/**
+node_modules/**
+tmp/**
+.gitignore
+README.md
