@@ -65,6 +65,10 @@ app.get("/audios/:type/:sourceId/:audioId/:audioName", (req, res) => {
   }
 });
 
+app.get('/hello-world', (req, res) => {
+  return res.send({status: 1, result: 'Hello World'});
+});
+
 app.listen(8081, () => {
   console.log(`Server is running on port 8081`);
   console.log(path.join(__dirname, "assets"));
